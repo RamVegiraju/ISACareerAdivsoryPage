@@ -4,6 +4,28 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <meta charset="UTF-8">
         <title>ISA Career Advisory</title>
+        <script type="text/javascript">
+
+            function CreateExcelSheet()
+            {
+            
+            var x=myTable.rows
+            
+            var xls = new ActiveXObject("Excel.Application")
+            xls.visible = true
+            xls.Workbooks.Add
+            for (i = 0; i < x.length; i++)
+            {
+            var y = x.cells
+            
+            
+                 for (j = 0; j < y.length; j++)
+                 {
+                    xls.Cells( i+1, j+1).Value = y[j].innerText
+                 }
+              }
+            }
+            </script>
     
     </head>
 
@@ -43,13 +65,15 @@
             </div>
 
             <div class="btn">
-                Submit
+                <input class="SubmitButton" type="Submit" value="Submit">
                 <i class="fas fa-arrow-right"></i>
             </div>
 
             <div class="social-icons">
                 <div class="facebook">
+                <a href="https://www.facebook.com/ISAatUVA">
                   <i class="fab fa-facebook-f"></i>
+                </a>
                 </div>
             </div>
         </div>
