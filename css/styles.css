@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
 body {
     margin: 0;
     background: white;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+}
+
+#ContactPage {
+    background: gray;
+}
+
+.contact-us{
+    width: 250px;
+    background: #fff;
+    padding: 50px;
+    margin: 100px auto;
+    border-radius: 30px;
+    position: relative;
 }
 
 .container {
